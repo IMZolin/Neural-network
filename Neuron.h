@@ -13,8 +13,12 @@ struct Connection{
 };
 
 class Neuron {
+public:
+    Neuron(unsigned numOutputs, unsigned myIndex);
+    void setOutputVal(double val) { outputVal = val; }
 private:
-
+    double outputVal;
+    std::vector<Connection> outputWeights;
 };
 
 

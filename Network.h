@@ -7,6 +7,8 @@
 #include "Neuron.h"
 
 class Network {
+public:
+    Network(const std::vector<unsigned> &topology);
 private:
     std::vector<Layer> layers;
     double error;
